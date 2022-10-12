@@ -2,13 +2,29 @@ const mobile_menu_icon = document.querySelector(".mobile-menu-icon");
 const mobile_menu = document.querySelector(".mobile-menu");
 const cardsContainer = document.querySelector(".stuff-container");
 
+const close_product_details_icon = document.getElementById("close_product_details_icon");
+const product_details = document.querySelector(".product-details");
+
 
 mobile_menu_icon.addEventListener("click", toggleMobileMenu);
+
+
+close_product_details_icon.addEventListener("click", closeAsideProductDetail);
+
 
 function toggleMobileMenu(){
     mobile_menu.classList.toggle("inactive");
 }
 
+
+
+function openAsideProductDetail(){
+    product_details.classList.remove("inactive");
+}
+
+function closeAsideProductDetail(){
+    product_details.classList.add("inactive");
+}
 
 
 // stuff cards
@@ -56,7 +72,7 @@ function renderProducts(arr){
         productImage.setAttribute("src", product.image);
 
         // click listtener for info
-        //productImage.addEventListener("click", openAsideProductDetail);
+        productImage.addEventListener("click", openAsideProductDetail);
 
         // product info
         const productInfo = document.createElement("div");

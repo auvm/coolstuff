@@ -5,8 +5,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --text-input-field: #F7F7F7;
+            --black: #0D0D0D;
+            
+            --light-gray: #88898C;
+            --dark-grak:#3B3B40;
+
+            --primary-blue: #bbdefb;
+            --light-blue:#edffff;
+            --dark-blue:#426A8C;
+
+
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .inactive{
+            display: none;
+        }
+
+        .product-details{
+            width: 350px;
+            border: 1px solid var(--dark-blue);
+            
+        }
+        figure{
+            margin: 0;
+        }
+        .product-details img:nth-child(1){
+            width: 25px;
+            position: absolute;
+            left: 325px;
+        }
+
+        .product-details img:nth-child(2){
+            margin: 0;
+            padding: 0;
+            width: 350px;
+            object-fit: cover;
+        }
+
+        .product-details-info{
+            padding: 25px;
+        }
+        .titles{
+            border-bottom: 1px solid var(--dark-blue);
+        }
+        .titles p:nth-child(1){
+            color: var(--dark-blue);
+        }
+        .titles > p{
+            font-size: var(--lg);
+            font-weight: bold;
+            margin: 4px;
+        }
+
+        .product-description{
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
     
+    <div class="product-details">
+        <figure>
+            <img src="./media/icons/cross.png" alt="close">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Amiga500_system.jpg/1280px-Amiga500_system.jpg">
+        </figure>        
+        <div class="product-details-info">
+            <div class="titles">
+                <p>1987</p>
+                <p>Amiga 500</p>
+            </div>
+            <div class="product-description">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum accusantium maiores minima sed error doloribus ipsum officiis culpa perspiciatis illo ratione recusandae vero, delectus omnis dicta voluptates libero magni totam!</p>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
 </body>
 </html>
