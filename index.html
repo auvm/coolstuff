@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <title>Cool Stuff I Own</title>
+</head>
+<style>
+    :root {
+        --white: #FFFFFF;
+        --text-input-field: #F7F7F7;
+        --black: #0D0D0D;
+        --light-gray: #88898C;
+        --dark-grak:#3B3B40;
+        --dark-blue:#426A8C;
+        --light-blue:#6997BF;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .inactive{
+      display: none;
+    }
+    /*-----   -----*/
+    /*----- Desktop navbar and items -----*/
+    .desktop-navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 24px;
+        height: 100px;
+        
+    }
+
+    .navbar-left img{    
+        padding: 10px;
+        width: 100px;
+    }
+
+    .navbar-right ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-right ul a{
+        text-decoration: none;
+        font-size: var(--lg);
+        color: var(--black);
+    }
+
+    .navbar-right ul li{
+        padding: 20px;
+    }
+
+    .navbar-right ul li:nth-child(-n+3):hover{
+        border-radius: 3px;
+        color: var(--white);
+        font-weight: bold;
+        background-color: var(--light-blue);
+    }
+
+
+    /*----- Mobile navbar and items -----*/
+
+    .mobile-navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-menu{
+        width: 20px;
+        position: absolute;
+        left: 20px;
+    }
+
+    .logo img{
+        padding-top: 10px;
+        height: 75px;
+    }
+    @media(max-width: 640px){
+        .desktop-navbar{
+            display: none;
+        }
+
+        
+    }
+
+    @media (min-width: 641px) {
+    .mobile-navbar{
+      display: none;
+    }
+  }
+
+</style>
+<body>
+    <nav>
+        <div class="desktop-navbar">
+            <div class="navbar-left">
+                <a href="/"><img src="./media/logos/logo.jpg" alt="Welcome"></a>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="/">Things</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Contact</a></li>
+                    <li>☕</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mobile-navbar">
+            <div class="mobile-menu">
+                <a href="/"><img src="./media/icons/icon_menu.svg" alt="Menu"></a>
+            </div>
+            
+            <div class="logo">
+                <a href="/"><img src="./media/logos/flat-logo.jpg" alt="Welcome"></a>
+            </div>
+            
+        </div>
+    </nav>
+    
+    
+    
+
+    <main>
+
+    </main>
+
+
+</body>
+</html>
